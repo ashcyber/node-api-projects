@@ -59,7 +59,7 @@ https://pinto-ton.glitch.me/new/http://xyz.com
 https://pinto-ton.glitch.me/5252
 ```
 
-### Example redirection output
+#### Example redirection output
 ```
 http://xyz.com
 ```
