@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>URL shortner Microservice</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+      <link href="./style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+      <div class="container text-center">
+         <h1>URL shortner Microservice</h1>
+          <h3>Example shortUrl creation usage:</h3>
+          <code>https://pinto-ton.glitch.me/new/https://google.com</code><br>
+          <code>https://pinto-ton.glitch.me/new/http://xyz.com</code>
+
+          <h3>Example shortUrl creation output:</h3>
+          <code>
+              {
+                "original_url": "http://xyz.com,
+                "short_url": https://pinto-ton.glitch.me/5252
+              }
+          </code>
+
+          <h3>Example usage: </h3>
+          <code>https://pinto-ton.glitch.me/5252</code>
+
+          <h3>shortUrl redirects to: </h3>
+          <code>http://xyz.com</code>
+      </div>
+   </body>
+
+</html>
