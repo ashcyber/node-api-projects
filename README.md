@@ -4,7 +4,7 @@ Create API and Microservice application
 
 ## Request Header Parser Microservice
 
-### Example Usage
+#### Example Usage
 
 ```
 https://sunset-ton.glitch.me/December%2015,%202015
@@ -17,7 +17,7 @@ https://sunset-ton.glitch.me/December 15,2015
 https://sunset-ton.glitch.me/1450137600
 ```
 
-### Example Output
+#### Example Output
 
 
 ```
@@ -27,13 +27,13 @@ https://sunset-ton.glitch.me/1450137600
 
 ## Timestamp Microservice
 
-### Example Usage
+#### Example Usage
 
 ```
 https://pollen-tornado.glitch.me/api/whoami
 ```
 
-### Example Output
+#### Example Output
 
 ```
 { "ipaddress": "70.243.20.73", "language": "en-US", "software": "Windows NT 10.0; Win64; x64" }
@@ -43,18 +43,18 @@ https://pollen-tornado.glitch.me/api/whoami
 
 ## UrlShortner Microservice
 
-### Example shortUrl creation usage
+#### Example shortUrl creation usage
 ```
 https://pinto-ton.glitch.me/new/https://google.com
 ```
 ```
 https://pinto-ton.glitch.me/new/http://xyz.com
 ```
-### Example shortUrl creation output
+#### Example shortUrl creation output
 ```
 { "original_url": "http://xyz.com, "short_url": https://pinto-ton.glitch.me/5252 }
 ```
-### Example usage
+#### Example usage
 ```
 https://pinto-ton.glitch.me/5252
 ```
