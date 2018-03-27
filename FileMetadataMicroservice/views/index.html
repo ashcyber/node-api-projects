@@ -1,0 +1,20 @@
+<html>
+    <head>        
+        <title>File Metadata Service</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+        crossorigin="anonymous">
+    </head>
+
+
+    <body>
+        <div class="container">
+            <h1>File Metadata Microservice</h1>
+            <p>Upload a file to extract metadata</p>            
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <input name="file" id="file" type="file"><br>
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
