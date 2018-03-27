@@ -2,7 +2,7 @@
 
 Create API and Microservice application 
 
-## Request Header Parser Microservice
+## Timestamp Microservice
 
 #### Example Usage
 
@@ -25,7 +25,7 @@ https://sunset-ton.glitch.me/1450137600
 ```
 
 
-## Timestamp Microservice
+## Request Header Parser Microservice
 
 #### Example Usage
 
@@ -62,4 +62,27 @@ https://pinto-ton.glitch.me/5252
 #### Example redirection output
 ```
 http://xyz.com
+```
+
+## FileMetadata Microservice 
+
+#### Example usage 
+
+upload a file and submit 
+``` 
+https://gentle-cake.glitch.me/
+```
+#### Example output 
+
+```
+{
+  "fieldname": "file",
+  "originalname": "geckodriver.log",
+  "encoding": "7bit",
+  "mimetype": "application/octet-stream",
+  "destination": "uploads/",
+  "filename": "a35e1a8b1cb322c8fc72a12184fff428",
+  "path": "uploads/a35e1a8b1cb322c8fc72a12184fff428",
+  "size": 66252
+}
 ```
