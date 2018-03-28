@@ -10,6 +10,12 @@ let app = express();
 
 app.use(bodyParser.json()); 
 
+
+app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/views'));
+
+
+
 // * after searchParams acts like a regex expr for 0 or more 
 // ? refers to query so req.query method must be used 
 // : refers to params so req.params must be used 

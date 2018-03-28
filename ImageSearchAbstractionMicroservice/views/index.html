@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Image Search Layer Abstraction</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+      <link href="./style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+      <div class="container text-center">
+         <h1>Image search layer abstraction</h1>
+          <h3>Example usage:</h3>
+          <code>https://satisfying-shampoo.glitch.me/imagesearch/puppies?offset=2</code><br>
+          <code>https://satisfying-shampoo.glitch.me/latest/imagesearch</code>
+
+          <h3>Example output image query:</h3>
+          <code>
+            [
+              {
+                "name": "Stop the Suffering of Beagles!! | Cruelty Free",
+                "image": "https://crueltyfreeblog.files.wordpress.com/2015/09/animal-wallpapers-cute-beagle-puppies-wallpaper-31121.jpg",
+                "thumnail": "https://tse2.mm.bing.net/th?id=OIP.3KBgauesh5bGG6hc7jSfzAHaFj&pid=Api"
+              },
+              {
+                "name": "15 Innocent and Cute Puppies Photography",
+                "image": "http://photographyinspired.com/media/2014/03/WoOf.jpg",
+                "thumnail": "https://tse2.mm.bing.net/th?id=OIP.XVu5MD6bUsg6ItACsR4C6AHaFj&pid=Api"
+              }
+            ]
+          </code>
+        
+        
+        
+
+          <h3>Example usage latest images: </h3>
+          <code>
+            [
+              {
+                "_id": "5abb00d11ec3ed2e4cc4ba81",
+                "searchUrl": "localhost:3000/imagesearch/rex?offset=10"
+              },
+              {
+                "_id": "5abb0117714d8c05f4559b6d",
+                "searchUrl": "localhost:3000/imagesearch/dogs?offset=10"
+              },
+              {
+                "_id": "5abb9bc2ac22c0035fa58195",
+                "searchUrl": "satisfying-shampoo.glitch.me/imagesearch/puppies?offset=2"
+              },
+            ]
+          </code>
+
+      </div>
+   </body>
+
+</html>
