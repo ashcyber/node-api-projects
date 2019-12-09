@@ -1,6 +1,3 @@
- 
-'use strict';
-
 var fs = require('fs');
 var express = require('express');
 var app = express();
@@ -18,8 +15,8 @@ app.use(express.static(__dirname + '/views'));
 
 
 // Fetching the input string
-app.get(('/:values'), function(req, res){
-  var values = req.params.values;
+app.get(('/api/timestamp/:date_string'), function(req, res){
+  var values = req.params.date_string;
   var d = new Date();
   var reg = /^\d+$/;
   
@@ -37,12 +34,12 @@ app.get(('/:values'), function(req, res){
   if(d.getTime()){
     res.send(JSON.stringify({
       unix: d.getTime()/1000, 
-      natural: month_name[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear()
+      utc: d.toUTCString()
     })); 
   }
   
   else{
-    res.send(JSON.stringify({unix: null, natural: null}));
+    res.send(JSON.stringify({unix: null, utc: null}));
   }
   
 
@@ -52,12 +49,6 @@ app.get(('/:values'), function(req, res){
 app.listen(3000, () => {
   console.log('Listening on port 3000');
 });
-
-
-
-
-
-
 
 
 
